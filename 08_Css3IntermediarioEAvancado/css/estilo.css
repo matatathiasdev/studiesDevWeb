@@ -91,7 +91,7 @@ ul {
 li {
     padding: 5px 20px;
     background: url(../imagens/seta.png) no-repeat left center;
-}*/
+}
 
 ul {
     margin: 0;
@@ -100,7 +100,6 @@ ul {
 }
 
 ul a {
-    /* border: 1px solid red; */
     width: 200px;
     height: 40px;
     display: block;
@@ -123,4 +122,45 @@ a:hover {
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;
+}*/
+
+/************** 
+Barra de navegação horizontal */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {  
+    float: left;
+}
+
+ul a {
+    /* border: 1px solid red; */
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro {
+    background: none;
+}
+
+UL a:hover {
+    color: #085662;
+    background: #44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servico #navegacao .servico a {
+    color: #085662;
+    background: #44cade;
 }
