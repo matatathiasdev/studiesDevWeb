@@ -125,7 +125,7 @@ a:hover {
 }*/
 
 /************** 
-Barra de navegação horizontal */
+Barra de navegação horizontal 
 ul {
     margin: 0;
     padding: 0;
@@ -140,7 +140,7 @@ ul li {
 }
 
 ul a {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     display: block;
     padding: 0 2em;
     line-height: 2.2em;
@@ -163,4 +163,108 @@ UL a:hover {
 #servico #navegacao .servico a {
     color: #085662;
     background: #44cade;
+}
+*/
+/********************************
+Barra de navegação com abas 
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li {
+    float: left;
+    background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a {
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(../imagens/aba-esquerda.png) no-repeat top left;
+    color: white;
+}
+ul a:hover {
+    color: #894a1f;
+}
+
+ul #atual {
+    background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+*/
+/********************************
+Layouts*/
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2;
+} 
+
+#container {
+    width: 720px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#marca {
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo {
+    width: 520px;
+    float: right;
+}
+
+#conteudo-principal {
+    width: 320px;
+    float: left;
+}
+
+#conteudo-secundario{
+    width: 180px;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao {
+	width: 180px;
+	float: left;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
 }
